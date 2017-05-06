@@ -7,7 +7,7 @@ password = input('Password : ')
 payload = {
     'email': email,
     'password': password
-}
+} 
 req = requests.post(url='https://discordapp.com/api/auth/login', json=payload)
 
 if req.status_code != 200:
