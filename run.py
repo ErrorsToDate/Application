@@ -12,7 +12,7 @@ req = requests.post(url='https://discordapp.com/api/auth/login', json=payload)
 
 if req.status_code != 200:
     print('Error :/')
-    exit(1)
+      exit(1)
 token = req.json()['token']
 app_name = input('Application name : ')
 description = input('Application description : ')
